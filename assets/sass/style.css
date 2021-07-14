@@ -189,6 +189,14 @@ main .main-container .card {
   background: var(--header);
   border-radius: 0.7rem;
   color: var(--text);
+  cursor: pointer;
+}
+
+main .main-container .card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 main .main-container .card .country-flag {

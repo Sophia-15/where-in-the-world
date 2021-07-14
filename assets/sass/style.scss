@@ -144,6 +144,13 @@ main {
 
             color: var(--text);
 
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.2s ease-in;
+            }
+
             .country-flag {
                 width: 25rem;
                 border-radius: 0.7rem 0.7rem 0 0;
