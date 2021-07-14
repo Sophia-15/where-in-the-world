@@ -1,0 +1,21 @@
+:root {
+    --dark-element: #2B3945;
+    --dark-bg: #202C37;
+
+    --text: #111517;
+    --light-input: #858585;
+    --bg: #FAFAFA;
+    --header: #FFF;
+    --white: #FFF;
+    --shadow: #F6F6F6;
+}
+
+[data-theme= 'dark'] {
+    --dark-element: #FFF;
+
+    --header: #2B3945;
+    --bg: #202C37;
+    --white: #FFF;
+    --text: #E5EBED;
+    --shadow: #1F2C35;
+}

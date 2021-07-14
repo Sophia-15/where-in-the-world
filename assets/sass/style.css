@@ -1,0 +1,278 @@
+:root {
+  --dark-element: #2B3945;
+  --dark-bg: #202C37;
+  --text: #111517;
+  --light-input: #858585;
+  --bg: #FAFAFA;
+  --header: #FFF;
+  --white: #FFF;
+  --shadow: #F6F6F6;
+}
+
+[data-theme='dark'] {
+  --dark-element: #FFF;
+  --header: #2B3945;
+  --bg: #202C37;
+  --white: #FFF;
+  --text: #E5EBED;
+  --shadow: #1F2C35;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bg);
+}
+
+header {
+  background: var(--header);
+  padding: 3rem 10.4rem;
+  -webkit-box-shadow: 1px 4px 10px var(--shadow);
+          box-shadow: 1px 4px 10px var(--shadow);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--text);
+}
+
+header .theme-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 14rem;
+}
+
+header .theme-section i {
+  color: var(--text);
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+header .theme-section p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+main {
+  padding: 8rem 10.4rem;
+}
+
+main .main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .main-header .search input {
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 4px 20px var(--shadow);
+          box-shadow: 1px 4px 20px var(--shadow);
+  background: var(--header);
+  padding: 1.5rem 4rem;
+  height: 6rem;
+  width: 50rem;
+  font-size: 1.6rem;
+  color: var(--text);
+  position: relative;
+}
+
+main .main-header .search input::-webkit-input-placeholder {
+  color: var(--text);
+}
+
+main .main-header .search input:-ms-input-placeholder {
+  color: var(--text);
+}
+
+main .main-header .search input::-ms-input-placeholder {
+  color: var(--text);
+}
+
+main .main-header .search input::placeholder {
+  color: var(--text);
+}
+
+main .main-header .search i {
+  font-size: 1.8rem;
+  position: absolute;
+  padding: 2rem 1rem;
+  z-index: 999;
+  color: var(--text);
+}
+
+main .main-header .filter select {
+  height: 6rem;
+  width: 20rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: var(--header);
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+main .main-header .filter option {
+  background: var(--header);
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 6rem;
+}
+
+main .main-container .card {
+  margin: 7rem 2rem;
+  width: 25rem;
+  height: 35rem;
+  -webkit-box-shadow: 1px 4px 20px var(--shadow);
+          box-shadow: 1px 4px 20px var(--shadow);
+  background: var(--header);
+  border-radius: 0.7rem;
+  color: var(--text);
+}
+
+main .main-container .card .country-flag {
+  width: 25rem;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+main .main-container .card .country-info {
+  padding: 2rem;
+}
+
+main .main-container .card .country-info .country-name {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+main .main-container .card .country-info .country-population {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+main .main-container .card .country-info .country-region {
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+main .main-container .card .country-info .country-capital {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1100px) {
+  main .main-header .search input {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 800px) {
+  main .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .main-header .search input {
+    margin-bottom: 3rem;
+  }
+  main .main-header .filter select {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 690px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 3rem 5rem;
+  }
+  header .theme-section {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
