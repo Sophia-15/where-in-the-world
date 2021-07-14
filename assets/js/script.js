@@ -39,7 +39,7 @@ function show(option) {
         cards += `<div class="card">
                     <img src="${data[i].flag}" alt="Country Flag" class="country-flag">
                     <div class="country-info">
-                        <p class="country-name">${data[i].name}</p>
+                        <h2 class="country-name">${data[i].name}</h2>
                         <br>
                         <p class="country-population">Population: ${data[i].population} </p>
                         <p class="country-region">Region: ${data[i].region}</p>
