@@ -6,8 +6,17 @@ const icon = document.querySelector('.theme')
 const body = document.querySelector('body')
 const description = document.querySelector('.theme-description')
 
+window.addEventListener('load', () => {
+  let page = document.querySelector(".page")
+  
+  setTimeout(function() {
+      
+    if (page.classList.contains('loading')) {
+      page.classList.remove('loading')
+    }
 
-window.onload = show('all')
+}, 1500);
+})
 
 regions.addEventListener('change', function(event) {
   let region = event.target.value
@@ -25,7 +34,6 @@ regions.addEventListener('change', function(event) {
     show('all')
   }
 })
-
 
 function show(option) {
   const api = `https://restcountries.eu/rest/v2/${option}`
@@ -70,8 +78,6 @@ function show(option) {
     })
 }
 
-
-
 icon.addEventListener('click', function() {
   if (icon.classList.contains('fa-sun')){
     icon.classList.remove('fa-sun')
@@ -85,3 +91,5 @@ icon.addEventListener('click', function() {
     description.innerText = 'Light Mode'
   }
 })
+
+show('all')
